@@ -1,0 +1,499 @@
+<!--ВИРІВНЯТИ КОД (Alt+Shift+F)-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Site#2</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!--скачали із сайту - fancyapps.com для вспливаючого вікна при назатті на кнопку-->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <!--підключення плагіна для select-->
+    <link rel="stylesheet" href="css/jquery.formstyler.css" />
+    <!--<link rel="stylesheet" href="css/jquery.formstyler.theme.css" /> - взяли те що треба і він більше не потрібен-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="conteiner">
+          <div class="header__top-inner">
+            <a class="header__phone" href="tel:380963092145"
+              >+38 (096) 309 21 45</a
+            ><!--(tel - властивість яка видає зразу дзвінок)-->
+            <a class="header__email" href="#">layout585@gmail.com</a>
+            <!--код для вспливаючого меню після кліку на кнопук, взятий з fancybox-->
+            <a
+              data-fancybox
+              data-src="#modal"
+              href="javascript:;"
+              class="header__btn"
+              href="#"
+              >Бесплатная консультация</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="conteiner">
+          <div class="header__content-inner">
+            <div class="header__logo">
+              <a href="#">
+                <img src="img/logo.png" alt="" />
+              </a>
+            </div>
+            <nav class="menu">
+              <div class="header__btn-menu"> <!--це для МОБІЛОК-->
+                <span class="icon-bars"></span>
+              </div>
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="slider">
+      <div class="conteiner">
+        <div class="slider__iner">
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</div>
+              <div class="slider__text">
+                Полное прекращение существования юридического лица с сохранением
+                легальности всей предыдущей деятельности.
+              </div>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__btn default-btn"
+                >Оставить заявку</a
+              >
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</div>
+              <div class="slider__text">
+                Полное прекращение существования юридического лица с сохранением
+                легальности всей предыдущей деятельности.
+              </div>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__btn default-btn"
+                >Оставить заявку</a
+              >
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</div>
+              <div class="slider__text">
+                Полное прекращение существования юридического лица с сохранением
+                легальности всей предыдущей деятельности.
+              </div>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__btn default-btn"
+                >Оставить заявку</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="conteiner">
+        <div class="about__top">
+          <div class="about_title-box">
+            <div class="about-title">
+              Наши Услуги
+            </div>
+            <div class="about__text">
+              Комплексный подход к вашему вопросу, своевременная правовую
+              помощь, представление интересов во всех судебных инстанциях.
+            </div>
+          </div>
+          <div class="about__btn">
+            <a href="#">
+              Показать все услуги
+            </a>
+          </div>
+        </div>
+        <div class="about__items">
+          <div class="about__item">
+            <img src="img/about-1.png" alt="" />
+            <div class="about__item-title">
+              Банкротство и ликвидация
+            </div>
+            <div class="about__item-text">
+              Полное прекращение существования юридического лица с сохранением
+              ле- гальности всей предыдущей деятельности
+            </div>
+            <div class="adout__item-btn">
+              <a class="about__item-link" href="#">Подробно</a>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="default-btn"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="about__item">
+            <img src="img/about-2.png" alt="" />
+            <div class="about__item-title">
+              Адвокатское сопровождение
+            </div>
+            <div class="about__item-text">
+              Мы гарантируем полное профессиональное обслуживание клиентов в
+              заявленных сферах деятельности и соблюдение конфиденциальности.
+            </div>
+            <div class="adout__item-btn">
+              <a class="about__item-link" href="#">Подробно</a>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="default-btn"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="about__item">
+            <img src="img/about-3.png" alt="" />
+            <div class="about__item-title">
+              Налоговый аудит
+            </div>
+            <div class="about__item-text">
+              Налоговый аудит проводят перед проведением налоговых проверок; при
+              оценке возможных налоговых рисков; при оптимизации
+              налогообложения.
+            </div>
+            <div class="adout__item-btn">
+              <a class="about__item-link" href="#">Подробно</a>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="default-btn"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="conteiner">
+        <div class="service-inner">
+          <div class="service__title">
+            О компании
+          </div>
+          <div class="service__text">
+            Компания специализируется на оказании услуг в сфере корпоративного
+            права, налогового консалтинга, представительства в судах, ликвидации
+            и банкротства предприятий. На сегодняшний день, коллектив компании
+            объединяет высокопрофессиональных экспертов имеющих
+          </div>
+          <a href="#" class="service__btn default-btn"> Узнати більше</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="conteiner">
+        <div class="form__inner">
+          <div class="form__content">
+            <div class="form__title-box">
+              <div class="form__title">
+                Получить Консультацию
+              </div>
+              <div class="form__text">
+                Комплексный подход к вашему вопросу, своевременная правовую
+                помощь, представление интересов во всех судебных инстанциях.
+              </div>
+            </div>
+            <div class="form__box">
+              <!--Тег <form> устанавливает форму на веб-странице. Форма 
+                предназначена для обмена данными между пользователем и 
+                сервером.-->
+              <form>
+                <div class="form__box-inner">
+                  <div class="form__box-left">
+                    <!--Тег <label> устанавливает связь между определенной 
+                      меткой, в качестве которой обычно выступает текст, 
+                      и элементом формы (<input>, <select>, <textarea>). 
+                        Такая связь необходима, чтобы изменять значения 
+                        элементов формы при нажатии курсором мыши на текст. 
+                        Кроме того, с помощью <label> можно устанавливать 
+                          горячие клавиши на клавиатуре и переходить на 
+                          активный элемент подобно ссылкам.-->
+                    <label>
+                      E-mail
+                      <input type="text" />
+                    </label>
+                    <label>
+                      Контактний тел
+                      <input type="text" />
+                    </label>
+                    <label>
+                      ПІБ
+                      <input type="text" />
+                    </label>
+                    <label>
+                      Тема питання
+                      <select>
+                        <option>-----------</option>
+                        <option>-----------</option>
+                        <option>-----------</option>
+                        <option>-----------</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="form__box-right">
+                    <label>
+                      Повідомлення
+                      <!--Елемент форми для створення області, в яку можна 
+                      вводити кілька строк тексту-->
+                      <textarea></textarea>
+                    </label>
+
+                    <!--type="submit" - тип кнопки для відправки
+                    даних на сервер-->
+                    <button class="default-btn" type="submit">
+                      Отримати консультацію
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="conteiner">
+        <div class="advantege__inner">
+          <div class="advantage-item">
+            <div class="advantage__title">
+              Десятки добровольных ликвидаций ежемесячно
+            </div>
+            <div class="advantage__text">
+              Мы умеем минимизировать все риски в процессе добровольной
+              ликвидации юридических лиц.
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage__title">
+              Отличное знание законов в сфере банкротства
+            </div>
+            <div class="advantage__text">
+              озволяют нам эффективно отстаивать как интересы кредиторов, так и
+              интересы собственников проблемной организации.
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage__title">
+              Большой опыт сопровождения банкротства
+            </div>
+            <div class="advantage__text">
+              Мы обладаем большим опытом сопровождения процедур банкротства
+              предприятий.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="conteiner">
+        <div class="news__top">
+          <div class="news_title-box">
+            <div class="news-title">
+              Новости Компании
+            </div>
+            <div class="news__text">
+              Комплексный подход к вашему вопросу, своевременная правовую
+              помощь, представление интересов во всех судебных инстанциях.
+            </div>
+          </div>
+          <div class="news__btn">
+            <a href="#">
+              Открыть все новости
+            </a>
+          </div>
+        </div>
+        <div class="news__iner">
+          <div class="nes__slider">
+            <div class="news__slider-inner">
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Верстка сайта с нуля до завершения
+                </div>
+                <div class="news__slider-text">
+                  Старая добрая верстка сайта из psd. В данном видео вы можете
+                  посмотреть весь процесс верстки современного сайта. Я подробно
+                  рассказываю обо всех инструментах и приемах которые я
+                  использую в верстке
+                </div>
+                <div class="news__slider-author">
+                  От 0 до 1
+                </div>
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Верстка сайта с нуля до завершения
+                </div>
+                <div class="news__slider-text">
+                  Старая добрая верстка сайта из psd. В данном видео вы можете
+                  посмотреть весь процесс верстки современного сайта. Я подробно
+                  рассказываю обо всех инструментах и приемах которые я
+                  использую в верстке
+                </div>
+                <div class="news__slider-author">
+                  От 0 до 1
+                </div>
+              </div>
+              <div class="news__slider-item">
+                <div class="news__slider-title">
+                  Верстка сайта с нуля до завершения
+                </div>
+                <div class="news__slider-text">
+                  Старая добрая верстка сайта из psd. В данном видео вы можете
+                  посмотреть весь процесс верстки современного сайта. Я подробно
+                  рассказываю обо всех инструментах и приемах которые я
+                  использую в верстке.
+                </div>
+                <div class="news__slider-author">
+                  От 0 до 1
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="news__blog">
+            <div class="new__images">
+              <img src="img/news-1.jpg" alt="" />
+              <div class="news__date">03.04</div>
+            </div>
+            <div class="news__blog-title">
+              Старая добрая верстка
+            </div>
+            <div class="news__blog-text">
+              В данном видео вы можете посмотреть весь процесс верстки
+              современного сайта. Я подробно рассказываю.
+            </div>
+          </a>
+          <a href="#" class="news__blog">
+            <div class="new__images">
+              <img src="img/news-2.jpg" alt="" />
+              <div class="news__date">03.04</div>
+            </div>
+            <div class="news__blog-title">
+              Старая добрая верстка
+            </div>
+            <div class="news__blog-text">
+              В данном видео вы можете посмотреть весь процесс верстки
+              современного сайта. Я подробно рассказываю.
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="fotter">
+      <div class="footer-content">
+        <div class="conteiner">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <div class="footer__title">
+                Комплексне закриття заходу
+              </div>
+              <div class="footer__text">
+                Можно не писать путь к файлу руками, если в поле ввода
+                (например, src="") начать с "./", тогда появятся предложения.
+              </div>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="header__btn"
+                href="#"
+                >Бесплатная консультация</a
+              >
+
+              <ul class="footer__list">
+                <li>
+                  <a class="footer__phone" href="tel:380963092145"
+                    >+38 (096) 309 21 45</a
+                  >
+                </li>
+                <li><a href="#">layout585@gmail.com</a></li>
+                <li>
+                  <a class="footer__adr" href="#">Київ, вул. Жукова, 8 </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.9217184111008!2d30.481482315864675!3d50.461182394472374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce7976bee27b%3A0x1d3e315c9ebba01c!2z0JvRg9C60YzRj9C90L7QstGB0LrQsNGP!5e0!3m2!1sru!2sua!4v1566389250902!5m2!1sru!2sua"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <div class="conteiner">
+          <div class="copy__text">
+            2010 Старая добрая верстка сайта из psd.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--ДОБАВИЛИ З КОДУ НА fancybox, modal - це data-src="#modal" в коді вище для header__btn -->
+    <!--<div id="modal">
+      <h2>Hello!</h2>
+      <p>You are awesome!</p>
+    </div>- ЦЕ БУВ ОРИГІНАЛ!-->
+
+    <!--ТУТ БУДЕМО РОБИТИ КРАСИВУ ФОРМУ-->
+
+    <div id="modal">
+      <form>
+        <input type="text" placeholder="Your name">
+        <input type="text" placeholder="Your phone number">
+        <input type="submit" value="Відправити">
+
+      </form>
+    </div>
+
+    <!--БІБЛІОТЕКА ЯВА jQuery - обовязково для підключення яви, вставляється перед
+    закриваючим body взяли із сайту (https://developers.google.com/speed/libraries/)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!--підключення плагіна для select-->
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--дуже важлива така ПОСЛІДОВНІСТЬ-->
+  </body>
+</html>

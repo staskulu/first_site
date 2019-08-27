@@ -1,0 +1,185 @@
+/*====MOBILE VERSION====*/
+@media (max-width: 1000px){
+  .about__items{
+    display: block;
+  }
+.about__item{
+  max-width: 80%;
+  min-height: 330px;
+  margin: 30px auto;
+}
+.form__inner{
+ background-image: none; 
+}
+.news__iner{
+  display: block;
+}
+.nes__slider{
+  max-width: 100%;
+  margin-bottom: 90px;
+}
+.news__blog{
+  display: block;
+  max-width: 100%; 
+  margin-bottom: 30px;
+}
+.news__blog:after{
+content:"";
+clear: both;
+display: block;
+}
+.new__images{
+  float: left;
+  margin-right: 50px;
+}
+.news{
+  padding-bottom: 60px;
+}
+.footer__inner{
+  display: block;
+}
+.footer__map{
+  max-width: 100%; 
+}
+.footer__info{
+  margin-bottom: 30px;
+}
+}
+@media (max-width: 900px){
+.slider .slick-btn {
+display: none !important;
+}
+.about__top,
+.news__top{
+  display:block;
+}
+.about_title-box,
+.form__title-box,
+.news_title-box{
+  padding-left: 0;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+.about_title-box:before,
+.form__title-box:before,
+.news_title-box:before{
+  display: none;
+}
+.about__btn,
+.news__btn{
+  text-align: center;
+}
+.form{
+padding-bottom: 25px;
+}
+.form__box-inner{
+  display: block;
+  }
+
+.form__box-left {
+  max-width: 100%; 
+}
+.form__box-right {
+  max-width: 100%;  
+}
+.form__box-inner .jq-selectbox.jqselect{
+  margin-bottom: 10px;
+}
+.advantege__inner{
+display: block;
+}
+.advantage-item{
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+}
+@media (max-width: 700px) {
+  /*застосовується для екранів максимум 968px*/
+  .header__btn {
+    float: none;
+  }
+  .header__top-inner {
+    text-align: center;
+  }
+  .header__btn:before {
+    display: none; /*відключаємо іконку яка на біфорі*/
+  }
+  .footer__info .header__btn:before{
+    display: block;
+  }
+  .header__btn-menu{
+      display: block;
+      font-size: 28px;
+    
+  }
+  .menu ul{
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-top: 20px;
+      z-index: 50;
+  }
+  .menu li {
+      display: block;
+      text-align: center
+  }
+  .menu a{
+    display: block;
+    background-color: #ffc222;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+  }
+  .menu li+li{
+      padding-left: 0;
+  }
+
+}
+@media (max-width: 600px){
+.about__item{
+  max-width: 100%;
+  min-height: 375px;
+  margin: 30px auto;
+}
+}
+
+@media (max-width: 540px){
+  .nes__slider{
+    padding: 50px 15 px 25px 25px;
+  }
+  .nes__slider:before{
+    left: 25px;
+  }
+  .new__images{
+    float: none;
+  }
+  .news__slider-inner .slick-btn{
+    bottom: -90px;
+  }
+}
+
+@media (max-width: 414px){
+  .slider__title{
+    font-size: 24px;
+    }
+    .slider__text{
+      font-size: 16px;
+    }
+} 
+@media (max-width: 400px) {
+  .header__btn:before {
+    display: block; /*повертаємо іконку*/
+  }
+  .header__email {
+    padding-right: 30px;
+  }
+  .advantage-item{
+    padding: 0;
+  }
+}
+@media (min-width: 700px){
+    .menu ul{
+        display: block !important; /*повишає пріоритет*/
+    }
+}
